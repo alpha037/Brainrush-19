@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BRAINRUSH 2k19</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+	  
+	  	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	  <script>
+		$(document).ready(function(){
+			$("#myWinner").modal('show');
+		});
+	  </script>
+
+
+
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+		<script>
+			jQuery(document).ready(function() {
+			var offset = 220;
+			var duration = 500;
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop() > offset) {
+					jQuery('.back-to-top').fadeIn(duration);
+				} else {
+					jQuery('.back-to-top').fadeOut(duration);
+				}
+			});
+
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+
+//			$("nav").find("a").click(function(e) {
+//    			e.preventDefault();
+//    			var section = $(this).attr("href");
+//    			$("html, body").animate({
+//        			scrollTop: $(section).offset().top
+//				});
+//			});
+			
+			/*
+				Timer Countdown
+			*/
+			
+			// Set the date we're counting down to
+			var countDownDate = new Date("Nov 5, 2019 09:30:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+  				// Get today's date and time
+  				var now = new Date().getTime();
+    
+  				// Find the distance between now and the count down date
+  				var distance = countDownDate - now;
+    
+  				// Time calculations for days, hours, minutes and seconds
+  				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  				// Output the result in an element with id="timer"
+  				document.getElementById("timer").innerHTML = "ETA for Brainrush 2k19 : " + days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+    
+  				// If the count down is over, write some text 
+  				if (distance < 0) {
+    					clearInterval(x);
+    					document.getElementById("timer").innerHTML = "EXPIRED";
+  				}
+			}, 1000);
+			
+			
+		</script>
+
+  </head>
+  <body>
+	  
+	  <!--	Modal for Winners  -->
+	  
+	  <div id="myWinner" class="modal fade">
+       <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+				<br>
+				<p><h3>Winners for Brainrush 2k19!</h3></p>
+				<br>
+				<ul class="circle">
+                            <li class="text-primary"> Winner : Haarne Aaye Hain.</li>
+							<li class="text-primary"> 1<sup>st</sup> Runner Up : Cereal Killers.</li>
+							<li class="text-primary"> 2<sup>nd</sup> Runner Up : Me And The Boys.</li>
+                </ul>
+				<br>
+				<button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
+				<br><br>
+            </div>
+        </div>
+    	</div>
+	  </div>
+	  
+	  <!--	Modal For Popup on Page load  -->
+	  
+	  <div id="myModalOne" class="modal fade">
+       <div class="modal-dialog">
+        <div class="modal-content">
+<!--
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                <h1 class="modal-title">HURRY!</h1>
+            </div>
+-->
+            <div class="modal-body">
+				<br>
+				<p><h1>HURRY!</h1></p>
+				<p>Due to massive response received for Brainrush 2k19 and to avoid last minute rush on the day of the event, we would request all of the registered teams to pay the registration fee on Monday during lunch hours positively. And for those who haven't registered yet, go get registered soon! We have almost reached our limit and the registration will close soon!</p>
+                <a href="#myModalTimer" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400" data-toggle="modal"><span>Check Timer</span></a>
+				<button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
+				<br><br>
+            </div>
+        </div>
+    	</div>
+	  </div>
+	
+	<!--	Modal For Timer Countdown -->
+	
+	<div id="myModalTimer" class="modal fade">
+       <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+				<br><br>
+				<p id="timer"></p>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
+				<br><br>
+            </div>
+        </div>
+    	</div>
+	  </div>
+	
+	
+	<!-- Modal For Error -->
+	  <div id="myModal" class="modal fade" role="dialog">
+  		<div class="modal-dialog">
+
+    		<!-- Modal content-->
+    		<div class="modal-content">
+				<div class="modal-header">
+<!--        			<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+				<br><br>
+<!--         			<h2 class="modal-title" style="color: red;">Error</h2> -->
+      			</div>
+      			<div class="modal-body">
+				<br>
+              			<p><h2 style="color: red;">Error</h2></p>
+					<p>Oops. We are sorry, but the registrations for Brainrush 2k19 have closed.</p>
+      			</div>
+			<br>
+      			<div class="modal-footer">
+        			<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:whitesmoke">Close</button>
+      			</div>
+    		</div>
+
+  		</div>
+	  </div>
+	
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <header class="site-navbar py-3" role="banner" style="padding-bottom: 0%">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-11 col-xl-2">
+            <h1 class="mb-0"><a href="index.html" class="text-white h2 mb-0">BRAIN<span class="text-primary">RUSH'19</span> </a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+            <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="#round">Rounds</a></li>
+              <li><a href="#venue">Venue</a></li>
+              <li><a href="#team">Our Team</a></li>
+<!--	      	  <li><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGk4amswcTFqaTY0bWR2Nzhtc2hiZTVmOWsgYnJhaW5ydXNoMmsxOUBt&amp;tmsrc=brainrush2k19%40gmail.com"><img border="0" src="images/google.png"> Remind Me</a></li>-->
+              <li class="cta"><a href="#myModal" data-toggle="modal">Register</a></li>
+            </ul>
+          </nav>
+        </div>
+			<!--	Nav Bar		-->
+<!--			<div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#round" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>-->
+      </div>
+    </div>
+    </header>
+
+    <div class="site-section site-hero" style="padding-top: 60px">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-10">
+            <span>
+              <img src="images/brlogo_white.png" alt="Image" class="img-fluid" style= "max-width:11%">
+              <a href="http://mckvie.edu.in/"><img src="images/mckv.png" alt="MCKVIE" class="img-fluid" style= "max-width:12%"></a>
+              <a href="http://www.naac.gov.in/"><img src="images/naac_logo.png" alt="Image" class="img-fluid" style= "max-width:15%"></a>
+              <a href="http://www.csi-india.org/"><img src="images/csilogoshort.png" alt="CSI" class="img-fluid" style= "max-width:9%"></a>
+            </span>
+            <h1 class="d-block mb-4" data-aos="fade-up" data-aos-delay="200">BRAINRUSH 2K19</h1>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">An Initiative taken by the Department of Computer Science and Engineering (NBA Accredited)</span>
+            <span class="d-block mb-5 caption" data-aos="fade-up" data-aos-delay="300">MCKV Institute of Engineering <br>(NAAC Accredited "A" Grade Institute)</span>
+            <a href="#myModal" class="btn-custom" data-aos="fade-up" data-aos-delay="400" data-toggle="modal"><span>Register Here</span></a>
+			  <br><br>
+            <div style="padding-top: 5px;"><a href="#scroll" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Know More</span></a></div>
+			  <br><br>
+		<!--	  <div style="padding-top: 5px;"><a target="_blank" href=https://calendar.google.com/event?action=TEMPLATE&tmeid=NnNvbThkaG03NWk2YWI5aWNjcTMyYjlrY2RqNmFiYjFjNWhqOGI5bTY4czM2ZGo1Y2RpNjhkMzU2cyBicmFpbnJ1c2gyazE5QG0&tmsrc=brainrush2k19%40gmail.com" class="btn-custom" data-aos="fade-up" data-aos-delay="400"><span>Remind Me</span></a></div>  -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div  id="scroll" class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>What is BRAINRUSH?</h2>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <p>“BRAINRUSH” is the annual inter-college game show organised by the Computer Science and Engineering Department of MCKV Institute of Engineering under CSI - MCKVIE Student Chapter Activities. BRAINRUSH promises to test the analytical skills, attentiveness and inquisitiveness of the students. It is a game of utmost intelligence and knowledge, which provides a platform for testing and sharpening the skill-sets of the students. After four very successful runs, this year promises to be more enlighting, illuminating and fun.</p>
+          </div>
+        </div>
+
+        <div id="venue" class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>Event Details</h2>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="200">
+            <div align="left">
+               <ul style="line-height:2.0;">
+                   <li>Venue: <strong style="font-size: 20px">CSE Department, Block A 3rd Floor, <a id="maplink" href="https://goo.gl/maps/jpnMCFmvsoS2" target="_blank">MCKVIE Campus</a></strong>.</li>
+                   <li>Date & Time: <strong style="font-size: 20px">November 05, 2019, 9:30 A.M. Onwards</strong>.</li>
+               </ul>
+           </div>
+          </div>
+        </div>
+
+
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="site-section-heading">
+              <h2>Registration Details</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center speaker">
+          <div class="ml-auto order-lg-1">
+            <div class="bio pr-lg-5">
+              <ul class="text-uppercase" style="line-height:2.0;">
+                    <li>Teams must consist of 3 members.</li>
+                    <li>Registration Fees:
+                        <ul class="circle">
+                            <li class="text-primary"> Teams with only MCKVIE students: &#x20B9; 50 per team.</li>
+                            <li class="text-primary"> Other teams: &#x20B9; 100 per team.</li>
+                        </ul>
+                    </li>
+                    <li>Payment of registration fees has to be made from 30th Oct to 4th Nov (during lunch hours from 12.50 p.m. to 1.40 p.m at room no. A304 - CSE Department, 3rd floor).</li>
+                    <li>The payment receipts and Institute ID cards will serve as entry passes on the day of the event, and teams will not be allowed entry without producing the above mentioned.</li>
+                    <li>Fees is to be paid <b>ONLY</b> to the coordinators mentioned below:
+                        <ul class="circle">
+                            <li class="text-primary"> Priyangi Dutta : 9874559682</li>
+                            <li class="text-primary"> Soumik Basu : 9163784761</li>
+                            <li class="text-primary"> Dibya Sarkar : 8420182403</li>
+			                      <li class="text-primary"> Namrata Manna : 6289080630</li>
+                        </ul>
+                    </li>
+                    <li>Online registration ends on 4th November, 2019 at 23:59:59 hrs.</li>
+                    <li>Spot registrations may or may not be allowed, depending upon the number of teams already registered.</li>
+                    <li>For further assistance or queries, feel free to contact any member of the organising team or drop an email at <a href="mailto:brainrush2k19@gmail.com">brainrush2k19@gmail.com</a>.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="round" class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="site-section-heading">
+              <h2>Round Details</h2>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 pl-lg-5" data-aos="fade-up" data-aos-delay="100">
+          </div>
+        </div>
+
+        <div class="row align-items-stretch program">
+          <div class="col-12 border-top border-bottom py-5" data-aos="fade" data-aos-delay="200">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">11:00</span> <span>AM</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">BRAIN-DEN</h2>
+                <ul style="line-height:1.5;">
+                    <li class="style3">The first elimination round.</li>
+                    <li class="style3">How fast you can work in a team, reason your logics and grill your brains to get a solution?</li>
+                    <li class="style3">Skills checked: Basic Aptitude, Analytical and Logical Reasoning Skills.</li>
+                    <li class="style3">35 questions (7 stars), 40 minutes.</li>
+                    <li class="style3">20 teams proceed to the next round!</li>
+                    <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="300">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">12:30</span> <span>PM</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">HANGMAN</h2>
+                <ul style="line-height:1.5;">
+                    <li>The second elimination round.</li>
+                    <li>Fill in the blanks (Guess the word) on the clues you get. The clues may be images or written.</li>
+                    <li>Skills checked: Inquisitiveness, Sharpness.</li>
+                    <li>20 questions, 45 minutes.</li>
+                    <li>10 teams proceed to the next round!</li>
+                    <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="400">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">2:00</span> <span>PM</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">PANTOMIME</h2>
+                <ul style="line-height:1.5;">
+                    <li>The third round.</li>
+                    <li>The team has to act out a situation given to them according to a specified mood.</li>
+                    <li>Skills checked: Team work.</li>
+                    <li>2 minutes to think, 3 minutes to act.</li>
+                    <li>6 teams proceed to the finals.</li>
+		    <li>Scores will <strong>not</strong> be carried forward to the next round.</li>
+                    <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 border-bottom py-5" data-aos="fade" data-aos-delay="500">
+            <div class="row align-items-stretch">
+              <div class="col-md-3 text-white mb-3 mb-md-0"><span class="h4">3:30</span> <span>PM</span></div>
+              <div class="col-md-9">
+                <h2 class="text-white">THE MAGIC BOX</h2>
+                <ul style="line-height:1.5;">
+                    <li class="style3">The fourth round.</li>
+                    <li class="style3">A surprise round for the finale.</li>
+                    <li class="style3">Skills checked: Strategy, IQ.</li>
+                    <br>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="team" class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2>OUR TEAM</h2>
+		          <br><br>
+		          <h6>To know more about the members listed below, please click on their respective names.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/shubhranil1.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/shubhranil.nag">SHUBHRANIL NAG</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/shreya.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/shreya.ghosh.5688">SHREYA GHOSH</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/shubhranil2.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/alpha.037">SHUBHRANIL DUTTA</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/udit.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/udit.mukherjee.507">UDIT MUKHERJEE</a></h2>
+          </div>
+
+		  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/rupsa.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/kkb.lover.rupsa">RUPSA DAS</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/pabitra.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/SHARON339">PABITRA PAL</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/purbita.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/aparajita.saha.56">PURBITA SAHA</a></h2>
+          </div>
+
+		  <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/simran.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/seemo033">SIMRAN AKTAR</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/soumyadip.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/soumyadip.saha.77">SOUMYADIP SAHA</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/soumik.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/profile.php?id=100012175745218">SOUMIK KUMAR BASU</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/priyangi.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center;  padding-top: 10px;"><a href="https://www.facebook.com/priyangi.dutta.1">PRIYANGI DUTTA</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/hriddhi.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/hriddhi.mondal">HRIDDHI MONDAL</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/kaushani.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/kaushani.mukhopadhyay">KAUSHANI MUKHOPADHYAY</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/dipak.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/dipak.gupta.37454961">DIPAK GUPTA</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/saloni.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/salonitini">SALONI BANERJEE</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/dibya.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/dibya.sarkar.12">DIBYA SARKAR</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/nirvik.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/nirvikranjan.das">NIRVIK RANJAN DAS</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/gaurav.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/gaurav.deora.31">GAURAV DEORA</a></h2>
+          </div>
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/akash.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/NayakHoonMain.98">AKASH NAYAK</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/saikat.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/TriKat.26">SAIKAT DE</a></h2>
+          </div>
+
+			<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/khalid.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/profile.php?id=100007742836520">MD KHALID SHAHZAD</a></h2>
+          </div>
+
+        </div>
+
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/muskan.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/muskaan.garg.758">MUSKAN GARG</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/shivendu.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/shivendu.parashar.54">SHIVENDU PARASHAR</a></h2>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/namrota.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/namrota.manna">NAMROTA MANNA</a></h2>
+          </div>
+        </div>
+
+<!--
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/khalid.jpg" alt="Image" class="img-fluid" style="border-radius: 20px;">
+            <h2 class="mb-4" style="text-align: center; padding-top: 10px;"><a href="https://www.facebook.com/profile.php?id=100007742836520">MD KHALID SHAHZAD</a></h2>
+          </div>
+       </div>
+-->
+
+      </div>
+
+
+
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <div class="site-section-heading" data-aos="fade-up">
+              <h2>OUR SPONSOR</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5" >
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 blog-entry" data-aos="fade-up" data-aos-delay="300">
+            <a href="http://www.csi-india.org/" class="d-block mb-4">
+              <img src="images/csi_logo.png" alt="CSI" class="img-fluid" style="border-radius: 20px;">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="500">
+        <div class="col-12 text-center">
+          <a href="#myModal" class="btn-custom" data-aos="fade-up" data-aos-delay="400" data-toggle="modal"><span>Register Now</span></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+           <div class="col-md-12 text-center">
+            <div style="opacity: 0.2; align: right;">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+              </p>
+		    <p>Developed by <a href="https://www.facebook.com/alpha.037">Shubhranil Dutta</a>, <a href="https://www.facebook.com/hriddhi.mondal">Hriddhi Mondal</a>, <a href="https://www.facebook.com/dipak.gupta.37454961">Dipak Gupta</a> &amp <a href="https://www.facebook.com/profile.php?id=100012175745218">Soumik Basu</a></p>
+
+			<a href="#" class="back-to-top">↑</a>
+
+          	</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+  </body>
+</html>
